@@ -274,7 +274,7 @@ function getTimeAndDate(dateId) {
     "Nov",
     "Dec",
   ];
-  console.log("dateId" +dateId)
+  //console.log("dateId" +dateId)
   var date = new Date(dateId);
   var hr = date.getHours();
   var min = date.getMinutes();
