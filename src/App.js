@@ -40,7 +40,7 @@ function App() {
       toDos.filter((droppedTask) => {
         if (droppedTask.id === id) {
           droppedTask.dropped = true;
-          droppedTask.id = Date.now();
+          droppedTask.dropDate = Date.now();
         }
         return droppedTask;
       })
@@ -228,7 +228,8 @@ function App() {
                               fontWeight: "bold",
                             }}
                           >
-                            Cancelled on: {getTimeAndDate(tasks.id)}
+                            Activated on: {getTimeAndDate(tasks.id)} <br />
+                            Cancelled on: {getTimeAndDate(tasks.dropDate)}
                           </p>
                         </div>
                         <div className="col-1">
@@ -273,6 +274,7 @@ function getTimeAndDate(dateId) {
     "Nov",
     "Dec",
   ];
+  console.log("dateId" +dateId)
   var date = new Date(dateId);
   var hr = date.getHours();
   var min = date.getMinutes();

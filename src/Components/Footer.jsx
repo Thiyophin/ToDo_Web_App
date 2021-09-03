@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className=" row">
-      <footer className="footer bg-dark  text-center text-lg-start fixed-bottom">
+    <div className=" row mt-4" >
+      <footer className="footer fixed-bottom  bg-dark  text-center text-lg-start ">
         <div className="text-center p-3" style={{ color: "white" }}>
           Developed by : Thiyophin Johnson
           <div>

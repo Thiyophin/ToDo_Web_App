@@ -36,6 +36,7 @@ function DateAndInputField({ setToDo, setToDos, toDo, toDos }) {
           status: false,
           dropped: false,
           doneDate: null,
+          dropDate: null
         },
       ]);
       setToDo(""); // toDo value set to empty string.
@@ -52,7 +53,7 @@ function DateAndInputField({ setToDo, setToDos, toDo, toDos }) {
               <h3>{weekday}</h3>
             </div>
             <div className="input py-3">
-              <input
+              <input 
                 type="text"
                 placeholder="🖊️ Add tasks..."
                 onInput={inputTask}
