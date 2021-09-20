@@ -51,7 +51,6 @@ function App() {
     // let checkdelete = window.confirm("Do you want to delete this data?");
     Swal.fire({
       title: "Are you sure?",
-      text: "Do you want to delete this data!",
       showCancelButton: true,
       confirmButtonColor: "#d33",
       cancelButtonColor: "#3085d6",
