@@ -18,6 +18,7 @@ function App() {
       setToDos(toDos);
     }
   }, []); // [] array passed so that it works when mounting and unmounting
+  //console.log(localStorage.getItem("toDos"));
   // useEffect to update localStorage toDos when toDos array is updated
   useEffect(() => {
     localStorage.setItem("toDos", JSON.stringify(toDos));

@@ -14,14 +14,6 @@ function Footer() {
             >
               <i className="fab fa-github "></i>
             </a>
-            &nbsp;
-            <a
-              href="https://www.instagram.com/thiyophin_johnson/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-instagram"></i>
-            </a>
           </div>
         </div>
       </footer>
